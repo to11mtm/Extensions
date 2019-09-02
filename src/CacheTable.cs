@@ -1,24 +1,13 @@
-# Extensions.Caching.Linq2Db : Database agnostic IDistributedCache Implementation
+// Copyright (c) .NET Foundation. All rights reserved.
+// Licensed under the Apache License, Version 2.0. See License.txt in the project root for license information.
 
-This is an implementation of IDistributedCache utilizing Linq2Db. It is based on a fork of the Microsoft provided SQL Server Implementation and should be compatible at the table level.
+using System;
+using LinqToDB;
+using LinqToDB.Mapping;
 
-## "I don't want to use MSSQL" aka "Why does this library exist?"
-
-Linq2Db supports many databases including:
-
- - MSSQL
- - SQLite 
- - Oracle
- - MySql
- - Postgres 
- - Firebird
-
- The Unit tests provided show compatibility for many of these.
-
-You may use any table that is compatible with the structure of the CacheTable object below, (comments included)
-
-```
-/// <summary>
+namespace Extensions.Caching.Linq2Db
+{
+    /// <summary>
     /// Cache table Structure used by Linq2Db
     /// </summary>
     public class CacheTable
@@ -72,30 +61,5 @@ You may use any table that is compatible with the structure of the CacheTable ob
         [Column(Configuration = ProviderName.SqlServer, DataType = DataType.DateTimeOffset)]
         public DateTime? AbsoluteExpiration { get; set; }
     }
-```
-
-#USAGE:
-
-```
-//In this example, we are using the ServiceCollection abstraction as one may tend to in the ASPNET world...
-
-services.AddDistributedLinq2DbCache((LinqToDbCacheOptions options) => {
-                options.ConnectionString = "MyDatabaseConnectionString";
-                options.SchemaName = "MySchema";
-                options.TableName = "MyTable";
-                options.ProviderName = LinqToDB.ProviderName.SqlServer2008; //Lots of options here
-				                                                            //And not just MSSQL.
-
-				options.ExpiredItemsDeletionInterval == null //Optional TimeSpan. 
-				                                             //Must be no less than 5 Minutes. 
-				                                             //Default is 30 minutes.
-
-			    options.DefaultSlidingExpiration == null //Optional Timespan.
-				                                         //Must be Greater than Zero.
-				                                         //Default is 20 minutes.
-
-            });
-```
-
-If you don't want to use the `ServiceCollection` abstraction, you can just use `LinqToDbCache` as your `IDistributedCache` implementation. It takes the same `LinqToDbCacheOptions` type as documented above.
-
+    
+}

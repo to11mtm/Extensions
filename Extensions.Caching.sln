@@ -1,0 +1,60 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.438
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Linq2Db", "src\Extensions.Caching.Linq2Db.csproj", "{7239C5D8-CD63-45CA-8AAC-C0C53DBD9842}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Linq2Db.BaseTests", "test\base\Extensions.Caching.Linq2Db.BaseTests.csproj", "{4083B81F-181B-4897-B0AD-9B35A8800F04}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3BB69DCB-B9A1-47E9-B0E7-77027E2F0A68}"
+	ProjectSection(SolutionItems) = preProject
+		Readme.md = Readme.md
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Linq2Db.Firebird.Tests", "test\Firebird\Extensions.Caching.Linq2Db.Firebird.Tests.csproj", "{65B32967-3F56-4E3A-9C91-7B8034F39628}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Linq2Db.Postgres.Tests", "test\Postgres\Extensions.Caching.Linq2Db.Postgres.Tests.csproj", "{2C89BB4A-5010-4704-905C-4510FAAD3989}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Linq2Db.SQLite.Tests", "test\SQLite\Extensions.Caching.Linq2Db.SQLite.Tests.csproj", "{2C274A97-4C57-4F9B-8AD7-6A14C81550B4}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Extensions.Caching.Linq2Db.SQLServer.Tests", "test\SqlServer\Extensions.Caching.Linq2Db.SQLServer.Tests.csproj", "{8B259DB8-BBFA-46DE-9A6C-894FD8DBE69F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7239C5D8-CD63-45CA-8AAC-C0C53DBD9842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7239C5D8-CD63-45CA-8AAC-C0C53DBD9842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7239C5D8-CD63-45CA-8AAC-C0C53DBD9842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7239C5D8-CD63-45CA-8AAC-C0C53DBD9842}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4083B81F-181B-4897-B0AD-9B35A8800F04}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4083B81F-181B-4897-B0AD-9B35A8800F04}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4083B81F-181B-4897-B0AD-9B35A8800F04}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4083B81F-181B-4897-B0AD-9B35A8800F04}.Release|Any CPU.Build.0 = Release|Any CPU
+		{65B32967-3F56-4E3A-9C91-7B8034F39628}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{65B32967-3F56-4E3A-9C91-7B8034F39628}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{65B32967-3F56-4E3A-9C91-7B8034F39628}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{65B32967-3F56-4E3A-9C91-7B8034F39628}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C89BB4A-5010-4704-905C-4510FAAD3989}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C89BB4A-5010-4704-905C-4510FAAD3989}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C89BB4A-5010-4704-905C-4510FAAD3989}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C89BB4A-5010-4704-905C-4510FAAD3989}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C274A97-4C57-4F9B-8AD7-6A14C81550B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C274A97-4C57-4F9B-8AD7-6A14C81550B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C274A97-4C57-4F9B-8AD7-6A14C81550B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C274A97-4C57-4F9B-8AD7-6A14C81550B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B259DB8-BBFA-46DE-9A6C-894FD8DBE69F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B259DB8-BBFA-46DE-9A6C-894FD8DBE69F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B259DB8-BBFA-46DE-9A6C-894FD8DBE69F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B259DB8-BBFA-46DE-9A6C-894FD8DBE69F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3E41C40C-CFA9-4E66-9FFB-7BD4B5E999E0}
+	EndGlobalSection
+EndGlobal
